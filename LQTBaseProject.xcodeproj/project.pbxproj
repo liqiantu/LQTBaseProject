@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00FFDFE44CC906A7F13DE1A0 /* libPods-LQTBaseProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D514662C8F00E2B2EBEEA3F /* libPods-LQTBaseProjectTests.a */; };
+		3038445921B68B1400B6E914 /* LQTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445821B68B1400B6E914 /* LQTFirstViewController.m */; };
+		3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445B21B68B2500B6E914 /* LQTSecondViewController.m */; };
 		306561C921914204006BCBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306561C821914204006BCBC9 /* AppDelegate.m */; };
 		306561CC21914204006BCBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306561CB21914204006BCBC9 /* ViewController.m */; };
 		306561CF21914204006BCBC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306561CD21914204006BCBC9 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		30971B4721A7A934005044DF /* WTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3321A7A934005044DF /* WTLabel.m */; };
 		30971B4821A7A934005044DF /* WTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3521A7A934005044DF /* WTTextField.m */; };
 		30971B4921A7A934005044DF /* WTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3721A7A934005044DF /* WTTextView.m */; };
+		309C4E1F21B6582B00108CFB /* LQTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E1E21B6582B00108CFB /* LQTTabBarController.m */; };
+		309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */; };
 		84C54CAC2B86615E8D02655C /* libPods-LQTBaseProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82714B1DF5AC5D33855D0C6D /* libPods-LQTBaseProjectUITests.a */; };
 		FB47057D1F4D18CF32248F9C /* libPods-LQTBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D04B0852F8896D5BC845F /* libPods-LQTBaseProject.a */; };
 /* End PBXBuildFile section */
@@ -57,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3038445721B68B1400B6E914 /* LQTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTFirstViewController.h; sourceTree = "<group>"; };
+		3038445821B68B1400B6E914 /* LQTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTFirstViewController.m; sourceTree = "<group>"; };
+		3038445A21B68B2500B6E914 /* LQTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTSecondViewController.h; sourceTree = "<group>"; };
+		3038445B21B68B2500B6E914 /* LQTSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTSecondViewController.m; sourceTree = "<group>"; };
 		306561C421914204006BCBC9 /* LQTBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQTBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306561C721914204006BCBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		306561C821914204006BCBC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +119,10 @@
 		30971B3521A7A934005044DF /* WTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTextField.m; sourceTree = "<group>"; };
 		30971B3621A7A934005044DF /* WTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTextView.h; sourceTree = "<group>"; };
 		30971B3721A7A934005044DF /* WTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTextView.m; sourceTree = "<group>"; };
+		309C4E1D21B6582B00108CFB /* LQTTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTTabBarController.h; sourceTree = "<group>"; };
+		309C4E1E21B6582B00108CFB /* LQTTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTTabBarController.m; sourceTree = "<group>"; };
+		309C4E2C21B67D2800108CFB /* LQTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTBaseViewController.h; sourceTree = "<group>"; };
+		309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTBaseViewController.m; sourceTree = "<group>"; };
 		61A3970D92568295CCE1AA37 /* Pods-LQTBaseProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProjectUITests/Pods-LQTBaseProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		675A6C423BC79123030132E6 /* Pods-LQTBaseProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProjectUITests/Pods-LQTBaseProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AD604D13BEE09DF378BDA69 /* Pods-LQTBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,6 +246,7 @@
 		306561F921916007006BCBC9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				309C4E1C21B656F100108CFB /* ViewController */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -349,8 +362,23 @@
 		30971B4A21A7AA60005044DF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3038445721B68B1400B6E914 /* LQTFirstViewController.h */,
+				3038445821B68B1400B6E914 /* LQTFirstViewController.m */,
+				3038445A21B68B2500B6E914 /* LQTSecondViewController.h */,
+				3038445B21B68B2500B6E914 /* LQTSecondViewController.m */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		309C4E1C21B656F100108CFB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				309C4E1D21B6582B00108CFB /* LQTTabBarController.h */,
+				309C4E1E21B6582B00108CFB /* LQTTabBarController.m */,
+				309C4E2C21B67D2800108CFB /* LQTBaseViewController.h */,
+				309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		69A39C1B5F9EC409D3158550 /* Frameworks */ = {
@@ -428,6 +456,7 @@
 		306561BC21914204006BCBC9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LQT;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = MyDemo;
 				TargetAttributes = {
@@ -562,6 +591,8 @@
 				30971B3921A7A934005044DF /* NSDate+WT.m in Sources */,
 				306561CC21914204006BCBC9 /* ViewController.m in Sources */,
 				30971B4021A7A934005044DF /* UIButton+WT.m in Sources */,
+				309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */,
+				3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */,
 				306561D72191420C006BCBC9 /* main.m in Sources */,
 				30971B3F21A7A934005044DF /* UIBarButtonItem+WT.m in Sources */,
 				30971B4721A7A934005044DF /* WTLabel.m in Sources */,
@@ -572,8 +603,10 @@
 				30971B4621A7A934005044DF /* WTUtility.m in Sources */,
 				30971B0D21A79C76005044DF /* MBProgressHUD.m in Sources */,
 				30971B4121A7A934005044DF /* UIImage+WT.m in Sources */,
+				3038445921B68B1400B6E914 /* LQTFirstViewController.m in Sources */,
 				30971B3B21A7A934005044DF /* NSTimer+WT.m in Sources */,
 				30971B4921A7A934005044DF /* WTTextView.m in Sources */,
+				309C4E1F21B6582B00108CFB /* LQTTabBarController.m in Sources */,
 				30971B4821A7A934005044DF /* WTTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

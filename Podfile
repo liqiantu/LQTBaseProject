@@ -6,6 +6,9 @@ target 'LQTBaseProject' do
   # use_frameworks!
 
   # Pods for LQTBaseProject
+  
+  pod 'CYLTabBarController'
+  pod 'JXCategoryView'
 
   target 'LQTBaseProjectTests' do
     inherit! :search_paths

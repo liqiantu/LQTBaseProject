@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 328626fd404ae3a9d5d8fce8903241a63f399cc0
+PODS:
+  - CYLTabBarController (1.17.21)
+  - JXCategoryView (1.1.2)
 
-COCOAPODS: 1.5.3
+DEPENDENCIES:
+  - CYLTabBarController
+  - JXCategoryView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CYLTabBarController
+    - JXCategoryView
+
+SPEC CHECKSUMS:
+  CYLTabBarController: 56cd8b03847c6beb81184601df6a7933cd94be82
+  JXCategoryView: 7281368e4f4e10f1d006ff07114cafd63a495602
+
+PODFILE CHECKSUM: 998eab27f608d76ad5fbef70627f82f96909ba69
+
+COCOAPODS: 1.6.0.beta.2
