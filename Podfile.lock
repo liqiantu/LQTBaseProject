@@ -1,12 +1,14 @@
 PODS:
   - CYLTabBarController (1.17.21)
   - FDFullscreenPopGesture (1.1)
+  - FLEX (2.4.0)
   - JXCategoryView (1.1.2)
   - MJRefresh (3.1.15.7)
 
 DEPENDENCIES:
   - CYLTabBarController
   - FDFullscreenPopGesture
+  - FLEX
   - JXCategoryView
   - MJRefresh
 
@@ -14,15 +16,17 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CYLTabBarController
     - FDFullscreenPopGesture
+    - FLEX
     - JXCategoryView
     - MJRefresh
 
 SPEC CHECKSUMS:
   CYLTabBarController: 56cd8b03847c6beb81184601df6a7933cd94be82
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   JXCategoryView: 7281368e4f4e10f1d006ff07114cafd63a495602
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
 
-PODFILE CHECKSUM: a24ca962a789f4d8cb716cbc889e2fff9283a8bb
+PODFILE CHECKSUM: dea784b7852ca24363b90e1b718f573c77e5c3f1
 
 COCOAPODS: 1.6.0.beta.2

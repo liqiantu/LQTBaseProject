@@ -11,6 +11,8 @@ target 'LQTBaseProject' do
   pod 'JXCategoryView'
   pod 'FDFullscreenPopGesture'
   pod 'MJRefresh'
+  pod 'FLEX', :configurations => ['Debug']
+
 
   target 'LQTBaseProjectTests' do
     inherit! :search_paths

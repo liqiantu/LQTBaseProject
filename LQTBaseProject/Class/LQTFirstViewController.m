@@ -8,6 +8,11 @@
 
 #import "LQTFirstViewController.h"
 
+#if DEBUG
+#import "FLEXManager.h"
+#endif
+
+
 @interface LQTFirstViewController ()
 
 @end
@@ -16,9 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.title = @"first";
+    
+#if DEBUG
+    [[FLEXManager sharedManager] showExplorer];
+#endif
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
