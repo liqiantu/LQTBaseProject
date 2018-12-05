@@ -27,7 +27,6 @@
 #if DEBUG
     [[FLEXManager sharedManager] showExplorer];
 #endif
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

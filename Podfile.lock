@@ -1,9 +1,26 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - CYLTabBarController (1.17.21)
   - FDFullscreenPopGesture (1.1)
   - FLEX (2.4.0)
   - JXCategoryView (1.1.2)
   - MJRefresh (3.1.15.7)
+  - XMNetworking (1.1.0):
+    - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
   - CYLTabBarController
@@ -11,22 +28,27 @@ DEPENDENCIES:
   - FLEX
   - JXCategoryView
   - MJRefresh
+  - XMNetworking
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - CYLTabBarController
     - FDFullscreenPopGesture
     - FLEX
     - JXCategoryView
     - MJRefresh
+    - XMNetworking
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CYLTabBarController: 56cd8b03847c6beb81184601df6a7933cd94be82
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   JXCategoryView: 7281368e4f4e10f1d006ff07114cafd63a495602
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  XMNetworking: 7160cc06f504f325eec515a1e687ee1aa89bc462
 
-PODFILE CHECKSUM: dea784b7852ca24363b90e1b718f573c77e5c3f1
+PODFILE CHECKSUM: e76e0989cd13a6d5a116f55f0624472246b390bc
 
 COCOAPODS: 1.6.0.beta.2

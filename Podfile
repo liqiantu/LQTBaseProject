@@ -11,6 +11,8 @@ target 'LQTBaseProject' do
   pod 'JXCategoryView'
   pod 'FDFullscreenPopGesture'
   pod 'MJRefresh'
+  pod 'XMNetworking'
+
   pod 'FLEX', :configurations => ['Debug']
 
 
@@ -25,3 +27,6 @@ target 'LQTBaseProject' do
   end
 
 end
+
+
+
