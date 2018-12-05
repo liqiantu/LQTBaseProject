@@ -7,6 +7,7 @@
 //
 
 #import "LQTTabBarController.h"
+#import "LQTBaseNavigationViewController.h"
 
 #import "LQTFirstViewController.h"
 #import "LQTSecondViewController.h"
@@ -18,54 +19,51 @@
 
 @implementation LQTTabBarController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setUpTabBar];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
 }
 
-- (void)setupViewControllers {
+- (void)setUpTabBar {
+    self.tabBarItemsAttributes = [self tabBarItemsAttributes];
+    self.viewControllers = [self myViewControllers];
+}
+
+- (NSArray<UIViewController *> *)myViewControllers {
     LQTFirstViewController *firstViewController = [[LQTFirstViewController alloc] init];
-    UIViewController *firstNavigationController = [[UINavigationController alloc]
+    UINavigationController *firstNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:firstViewController];
-
+    
     LQTSecondViewController *secondViewController = [[LQTSecondViewController alloc] init];
-    UIViewController *secondNavigationController = [[UINavigationController alloc]
+    UINavigationController *secondNavigationController = [[UINavigationController alloc]
                                                     initWithRootViewController:secondViewController];
-
-
-//    CYLTabBarController *tabBarController = [[CYLTabBarController alloc] init];
-    [self customizeTabBarForController:self];
-
-    [self setViewControllers:@[
-                                           firstNavigationController,
-                                           secondNavigationController,
-                                           ]];
-//    self.tabBarController = tabBarController;
+    
+    return @[firstNavigationController,secondNavigationController];
 }
 
-/*
- *
- 在`-setViewControllers:`之前设置TabBar的属性，
- *
- */
-- (void)customizeTabBarForController:(CYLTabBarController *)tabBarController {
-    
+- (NSArray<NSDictionary *> *)tabBarItemsAttributes {
     NSDictionary *dict1 = @{
                             CYLTabBarItemTitle : @"firstPage",
-//                            CYLTabBarItemImage : @"home_normal",
-//                            CYLTabBarItemSelectedImage : @"home_highlight",
+                            //                            CYLTabBarItemImage : @"home_normal",
+                            //                            CYLTabBarItemSelectedImage : @"home_highlight",
                             };
     NSDictionary *dict2 = @{
                             CYLTabBarItemTitle : @"secondPage",
-//                            CYLTabBarItemImage : @"mycity_normal",
-//                            CYLTabBarItemSelectedImage : @"mycity_highlight",
+                            //                            CYLTabBarItemImage : @"mycity_normal",
+                            //                            CYLTabBarItemSelectedImage : @"mycity_highlight",
                             };
     
-    NSArray *tabBarItemsAttributes = @[ dict1, dict2 ];
-    self.tabBarItemsAttributes = tabBarItemsAttributes;
+    return @[ dict1, dict2 ];
 }
-
 
 @end

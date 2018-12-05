@@ -39,6 +39,10 @@
 		30971B4921A7A934005044DF /* WTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3721A7A934005044DF /* WTTextView.m */; };
 		309C4E1F21B6582B00108CFB /* LQTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E1E21B6582B00108CFB /* LQTTabBarController.m */; };
 		309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */; };
+		30F1027E21B778BC003CE4CD /* File in Resources */ = {isa = PBXBuildFile; fileRef = 30F1027D21B778BC003CE4CD /* File */; };
+		30F1028121B778D9003CE4CD /* File in Resources */ = {isa = PBXBuildFile; fileRef = 30F1028021B778D9003CE4CD /* File */; };
+		30F1028421B779E4003CE4CD /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1028321B779E4003CE4CD /* UIViewController+Swizzle.m */; };
+		30F1028721B7B50F003CE4CD /* LQTBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1028621B7B50F003CE4CD /* LQTBaseNavigationViewController.m */; };
 		84C54CAC2B86615E8D02655C /* libPods-LQTBaseProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82714B1DF5AC5D33855D0C6D /* libPods-LQTBaseProjectUITests.a */; };
 		FB47057D1F4D18CF32248F9C /* libPods-LQTBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D04B0852F8896D5BC845F /* libPods-LQTBaseProject.a */; };
 /* End PBXBuildFile section */
@@ -123,6 +127,12 @@
 		309C4E1E21B6582B00108CFB /* LQTTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTTabBarController.m; sourceTree = "<group>"; };
 		309C4E2C21B67D2800108CFB /* LQTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTBaseViewController.h; sourceTree = "<group>"; };
 		309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTBaseViewController.m; sourceTree = "<group>"; };
+		30F1027D21B778BC003CE4CD /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		30F1028021B778D9003CE4CD /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		30F1028221B779E4003CE4CD /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
+		30F1028321B779E4003CE4CD /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
+		30F1028521B7B50F003CE4CD /* LQTBaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTBaseNavigationViewController.h; sourceTree = "<group>"; };
+		30F1028621B7B50F003CE4CD /* LQTBaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTBaseNavigationViewController.m; sourceTree = "<group>"; };
 		61A3970D92568295CCE1AA37 /* Pods-LQTBaseProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProjectUITests/Pods-LQTBaseProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		675A6C423BC79123030132E6 /* Pods-LQTBaseProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProjectUITests/Pods-LQTBaseProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AD604D13BEE09DF378BDA69 /* Pods-LQTBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +256,8 @@
 		306561F921916007006BCBC9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				30F1027F21B778CA003CE4CD /* Model */,
+				30F1027C21B77595003CE4CD /* View */,
 				309C4E1C21B656F100108CFB /* ViewController */,
 			);
 			path = Base;
@@ -377,8 +389,28 @@
 				309C4E1E21B6582B00108CFB /* LQTTabBarController.m */,
 				309C4E2C21B67D2800108CFB /* LQTBaseViewController.h */,
 				309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */,
+				30F1028221B779E4003CE4CD /* UIViewController+Swizzle.h */,
+				30F1028321B779E4003CE4CD /* UIViewController+Swizzle.m */,
+				30F1028521B7B50F003CE4CD /* LQTBaseNavigationViewController.h */,
+				30F1028621B7B50F003CE4CD /* LQTBaseNavigationViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		30F1027C21B77595003CE4CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30F1027D21B778BC003CE4CD /* File */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30F1027F21B778CA003CE4CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30F1028021B778D9003CE4CD /* File */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		69A39C1B5F9EC409D3158550 /* Frameworks */ = {
@@ -402,6 +434,7 @@
 				306561C021914204006BCBC9 /* Sources */,
 				306561C121914204006BCBC9 /* Frameworks */,
 				306561C221914204006BCBC9 /* Resources */,
+				F1C0714BB3488D97C7A4A983 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -500,6 +533,8 @@
 			files = (
 				30971B3E21A7A934005044DF /* Checkmark_success_white@2x.png in Resources */,
 				306561D42191420C006BCBC9 /* LaunchScreen.storyboard in Resources */,
+				30F1028121B778D9003CE4CD /* File in Resources */,
+				30F1027E21B778BC003CE4CD /* File in Resources */,
 				306561D12191420B006BCBC9 /* Assets.xcassets in Resources */,
 				306561CF21914204006BCBC9 /* Main.storyboard in Resources */,
 				30971B3D21A7A934005044DF /* Checkmark_failure_white@2x.png in Resources */,
@@ -577,6 +612,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F1C0714BB3488D97C7A4A983 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -594,6 +651,8 @@
 				309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */,
 				3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */,
 				306561D72191420C006BCBC9 /* main.m in Sources */,
+				30F1028421B779E4003CE4CD /* UIViewController+Swizzle.m in Sources */,
+				30F1028721B7B50F003CE4CD /* LQTBaseNavigationViewController.m in Sources */,
 				30971B3F21A7A934005044DF /* UIBarButtonItem+WT.m in Sources */,
 				30971B4721A7A934005044DF /* WTLabel.m in Sources */,
 				306561C921914204006BCBC9 /* AppDelegate.m in Sources */,
@@ -782,14 +841,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJEC23A2X6;
 				INFOPLIST_FILE = LQTBaseProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MyDemo.LQTBaseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lqt.LQTBaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -801,14 +860,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJEC23A2X6;
 				INFOPLIST_FILE = LQTBaseProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MyDemo.LQTBaseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lqt.LQTBaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

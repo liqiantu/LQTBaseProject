@@ -9,6 +9,8 @@ target 'LQTBaseProject' do
   
   pod 'CYLTabBarController'
   pod 'JXCategoryView'
+  pod 'FDFullscreenPopGesture'
+  pod 'MJRefresh'
 
   target 'LQTBaseProjectTests' do
     inherit! :search_paths

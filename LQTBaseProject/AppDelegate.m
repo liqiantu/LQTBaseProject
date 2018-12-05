@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LQTTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -21,9 +22,9 @@
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
     
-    UIViewController *vc = [UIViewController new];
+    LQTTabBarController *tabVC = [LQTTabBarController new];
     
-    self.window.rootViewController = vc;
+    [self.window setRootViewController:tabVC];
     [self.window makeKeyAndVisible];
     
     
