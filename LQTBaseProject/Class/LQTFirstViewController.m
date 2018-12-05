@@ -6,16 +6,25 @@
 //  Copyright © 2018年 MyDemo. All rights reserved.
 //
 
-#import "LQTFirstViewController.h"
-
 #if DEBUG
 #import "FLEXManager.h"
 #endif
 
+#import "LQTFirstViewController.h"
+#import "LQTContentTableViewController.h"
+#import <JXCategoryView.h>
 
-@interface LQTFirstViewController ()
+#define WindowsSize [UIScreen mainScreen].bounds.size
+
+@interface LQTFirstViewController () <JXCategoryViewDelegate>
+
+@property (nonatomic, strong) JXCategoryTitleView *categoryView;
+@property (nonatomic, strong) NSMutableArray <LQTContentTableViewController *> *listVCArray;
+@property (nonatomic, strong) JXCategoryListVCContainerView *listVCContainerView;
 
 @end
+
+// TODO: http://gank.io/api/today
 
 @implementation LQTFirstViewController
 
@@ -34,5 +43,9 @@
     
     NSLog(@"viewWillAppear");
 }
+
+#pragma mark - private method
+
+- (void)
 
 @end

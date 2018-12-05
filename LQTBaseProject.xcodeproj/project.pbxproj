@@ -44,6 +44,7 @@
 		30F1028421B779E4003CE4CD /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1028321B779E4003CE4CD /* UIViewController+Swizzle.m */; };
 		30F1028721B7B50F003CE4CD /* LQTBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1028621B7B50F003CE4CD /* LQTBaseNavigationViewController.m */; };
 		30F1028A21B7E620003CE4CD /* LQTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1028921B7E620003CE4CD /* LQTBaseTableViewController.m */; };
+		30F1028F21B7F1AD003CE4CD /* LQTContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1028E21B7F1AD003CE4CD /* LQTContentTableViewController.m */; };
 		84C54CAC2B86615E8D02655C /* libPods-LQTBaseProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82714B1DF5AC5D33855D0C6D /* libPods-LQTBaseProjectUITests.a */; };
 		FB47057D1F4D18CF32248F9C /* libPods-LQTBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4D04B0852F8896D5BC845F /* libPods-LQTBaseProject.a */; };
 /* End PBXBuildFile section */
@@ -136,6 +137,8 @@
 		30F1028621B7B50F003CE4CD /* LQTBaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTBaseNavigationViewController.m; sourceTree = "<group>"; };
 		30F1028821B7E620003CE4CD /* LQTBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTBaseTableViewController.h; sourceTree = "<group>"; };
 		30F1028921B7E620003CE4CD /* LQTBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTBaseTableViewController.m; sourceTree = "<group>"; };
+		30F1028D21B7F1AD003CE4CD /* LQTContentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTContentTableViewController.h; sourceTree = "<group>"; };
+		30F1028E21B7F1AD003CE4CD /* LQTContentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTContentTableViewController.m; sourceTree = "<group>"; };
 		61A3970D92568295CCE1AA37 /* Pods-LQTBaseProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProjectUITests/Pods-LQTBaseProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		675A6C423BC79123030132E6 /* Pods-LQTBaseProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProjectUITests/Pods-LQTBaseProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AD604D13BEE09DF378BDA69 /* Pods-LQTBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -377,6 +380,7 @@
 		30971B4A21A7AA60005044DF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				30F1028B21B7EFEF003CE4CD /* New Group */,
 				3038445721B68B1400B6E914 /* LQTFirstViewController.h */,
 				3038445821B68B1400B6E914 /* LQTFirstViewController.m */,
 				3038445A21B68B2500B6E914 /* LQTSecondViewController.h */,
@@ -416,6 +420,23 @@
 				30F1028021B778D9003CE4CD /* File */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		30F1028B21B7EFEF003CE4CD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				30F1028C21B7F16A003CE4CD /* ContentVC */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		30F1028C21B7F16A003CE4CD /* ContentVC */ = {
+			isa = PBXGroup;
+			children = (
+				30F1028D21B7F1AD003CE4CD /* LQTContentTableViewController.h */,
+				30F1028E21B7F1AD003CE4CD /* LQTContentTableViewController.m */,
+			);
+			path = ContentVC;
 			sourceTree = "<group>";
 		};
 		69A39C1B5F9EC409D3158550 /* Frameworks */ = {
@@ -651,6 +672,7 @@
 				30971B3C21A7A934005044DF /* CALayer+WT.m in Sources */,
 				30971B4521A7A934005044DF /* UIViewController+WT.m in Sources */,
 				30971B3921A7A934005044DF /* NSDate+WT.m in Sources */,
+				30F1028F21B7F1AD003CE4CD /* LQTContentTableViewController.m in Sources */,
 				306561CC21914204006BCBC9 /* ViewController.m in Sources */,
 				30971B4021A7A934005044DF /* UIButton+WT.m in Sources */,
 				309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */,

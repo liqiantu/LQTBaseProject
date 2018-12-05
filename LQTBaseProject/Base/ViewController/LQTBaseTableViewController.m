@@ -14,6 +14,8 @@
 
 @implementation LQTBaseTableViewController
 
+// TODO: 添加MJRefresh 封装
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
