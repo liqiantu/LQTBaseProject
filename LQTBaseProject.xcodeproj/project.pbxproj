@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		00FFDFE44CC906A7F13DE1A0 /* libPods-LQTBaseProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D514662C8F00E2B2EBEEA3F /* libPods-LQTBaseProjectTests.a */; };
 		3020B99621BE01400046F1A9 /* UIWindow+JXSafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B99521BE01400046F1A9 /* UIWindow+JXSafeArea.m */; };
+		3020B99A21BE80340046F1A9 /* LQTRequestCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B99921BE80330046F1A9 /* LQTRequestCenter.m */; };
 		3038445921B68B1400B6E914 /* LQTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445821B68B1400B6E914 /* LQTFirstViewController.m */; };
 		3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445B21B68B2500B6E914 /* LQTSecondViewController.m */; };
 		306561C921914204006BCBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306561C821914204006BCBC9 /* AppDelegate.m */; };
@@ -70,6 +71,8 @@
 /* Begin PBXFileReference section */
 		3020B99421BE013F0046F1A9 /* UIWindow+JXSafeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JXSafeArea.h"; sourceTree = "<group>"; };
 		3020B99521BE01400046F1A9 /* UIWindow+JXSafeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JXSafeArea.m"; sourceTree = "<group>"; };
+		3020B99821BE80330046F1A9 /* LQTRequestCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTRequestCenter.h; sourceTree = "<group>"; };
+		3020B99921BE80330046F1A9 /* LQTRequestCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTRequestCenter.m; sourceTree = "<group>"; };
 		3038445721B68B1400B6E914 /* LQTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTFirstViewController.h; sourceTree = "<group>"; };
 		3038445821B68B1400B6E914 /* LQTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTFirstViewController.m; sourceTree = "<group>"; };
 		3038445A21B68B2500B6E914 /* LQTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTSecondViewController.h; sourceTree = "<group>"; };
@@ -203,6 +206,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		3020B99721BE80080046F1A9 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				3020B99821BE80330046F1A9 /* LQTRequestCenter.h */,
+				3020B99921BE80330046F1A9 /* LQTRequestCenter.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		306561BB21914204006BCBC9 = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +279,7 @@
 		306561F921916007006BCBC9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				3020B99721BE80080046F1A9 /* NetWork */,
 				30F1027F21B778CA003CE4CD /* Model */,
 				30F1027C21B77595003CE4CD /* View */,
 				309C4E1C21B656F100108CFB /* ViewController */,
@@ -686,6 +699,7 @@
 				30F1028421B779E4003CE4CD /* UIViewController+Swizzle.m in Sources */,
 				30F1028721B7B50F003CE4CD /* LQTBaseNavigationViewController.m in Sources */,
 				30971B3F21A7A934005044DF /* UIBarButtonItem+WT.m in Sources */,
+				3020B99A21BE80340046F1A9 /* LQTRequestCenter.m in Sources */,
 				30971B4721A7A934005044DF /* WTLabel.m in Sources */,
 				306561C921914204006BCBC9 /* AppDelegate.m in Sources */,
 				30971B3A21A7A934005044DF /* NSString+WT.m in Sources */,
