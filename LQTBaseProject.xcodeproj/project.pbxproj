@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00FFDFE44CC906A7F13DE1A0 /* libPods-LQTBaseProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D514662C8F00E2B2EBEEA3F /* libPods-LQTBaseProjectTests.a */; };
+		3020B99621BE01400046F1A9 /* UIWindow+JXSafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B99521BE01400046F1A9 /* UIWindow+JXSafeArea.m */; };
 		3038445921B68B1400B6E914 /* LQTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445821B68B1400B6E914 /* LQTFirstViewController.m */; };
 		3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445B21B68B2500B6E914 /* LQTSecondViewController.m */; };
 		306561C921914204006BCBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306561C821914204006BCBC9 /* AppDelegate.m */; };
@@ -67,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3020B99421BE013F0046F1A9 /* UIWindow+JXSafeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JXSafeArea.h"; sourceTree = "<group>"; };
+		3020B99521BE01400046F1A9 /* UIWindow+JXSafeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JXSafeArea.m"; sourceTree = "<group>"; };
 		3038445721B68B1400B6E914 /* LQTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTFirstViewController.h; sourceTree = "<group>"; };
 		3038445821B68B1400B6E914 /* LQTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTFirstViewController.m; sourceTree = "<group>"; };
 		3038445A21B68B2500B6E914 /* LQTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTSecondViewController.h; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 		300176AE21A2699600BFAF97 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3020B99421BE013F0046F1A9 /* UIWindow+JXSafeArea.h */,
+				3020B99521BE01400046F1A9 /* UIWindow+JXSafeArea.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -694,6 +699,7 @@
 				30971B3B21A7A934005044DF /* NSTimer+WT.m in Sources */,
 				30971B4921A7A934005044DF /* WTTextView.m in Sources */,
 				309C4E1F21B6582B00108CFB /* LQTTabBarController.m in Sources */,
+				3020B99621BE01400046F1A9 /* UIWindow+JXSafeArea.m in Sources */,
 				30971B4821A7A934005044DF /* WTTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

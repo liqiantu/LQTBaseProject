@@ -71,7 +71,7 @@
 //        [MPUmengHelper beginLogPageView:[self class]];
     }
     
-    NSLog(@"swiz_viewWillAppear");
+//    NSLog(@"swiz_viewWillAppear");
     
     [self swiz_viewWillAppear:animated];
 }

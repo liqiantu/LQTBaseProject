@@ -21,6 +21,7 @@
     
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.backgroundColor = [UIColor whiteColor];
     
     LQTTabBarController *tabVC = [LQTTabBarController new];
     
