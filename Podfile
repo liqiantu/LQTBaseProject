@@ -12,6 +12,8 @@ target 'LQTBaseProject' do
   pod 'FDFullscreenPopGesture'
   pod 'MJRefresh'
   pod 'XMNetworking'
+  pod 'YYModel'
+  pod 'MBProgressHUD'
 
   pod 'FLEX', :configurations => ['Debug']
 

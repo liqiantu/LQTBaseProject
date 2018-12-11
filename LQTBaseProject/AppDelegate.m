@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "LQTTabBarController.h"
+#import "LQTRequestCenter.h"
+
+#if DEBUG
+    #import "FLEXManager.h"
+#endif
 
 @interface AppDelegate ()
 
@@ -28,6 +33,11 @@
     [self.window setRootViewController:tabVC];
     [self.window makeKeyAndVisible];
     
+#if DEBUG
+    [[FLEXManager sharedManager] showExplorer];
+#endif
+    
+    [LQTRequestCenter congfigCenter];
     
     return YES;
 }

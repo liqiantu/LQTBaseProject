@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LQTRequestCenter : NSObject
 
++ (void)congfigCenter;
+
 + (void)sendGetRequest:(requestBlock)requestBlk onSuccess:(successBlock)successBlk onFailure:(failureBlock)failureBlk;
 
 @end

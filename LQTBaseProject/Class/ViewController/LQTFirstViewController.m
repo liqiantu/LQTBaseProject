@@ -6,10 +6,6 @@
 //  Copyright © 2018年 MyDemo. All rights reserved.
 //
 
-#if DEBUG
-#import "FLEXManager.h"
-#endif
-
 #import "LQTFirstViewController.h"
 #import "LQTContentTableViewController.h"
 #import <JXCategoryView.h>
@@ -25,19 +21,16 @@
 
 @end
 
-// TODO: http://gank.io/api/today
 
 @implementation LQTFirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-#if DEBUG
-//    [[FLEXManager sharedManager] showExplorer];
-#endif
     
-    [self configUI];
 }
+
+
 
 - (void)configUI {
     self.title = @"first";

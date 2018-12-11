@@ -7,7 +7,7 @@
 //
 
 #import "LQTRequestCenter.h"
-
+#import "MBProgressHUD.h"
 @implementation LQTRequestCenter
 
 + (void)congfigCenter {
@@ -40,12 +40,15 @@
         request.httpMethod = kXMHTTPMethodGET;
         request.requestSerializerType = kXMRequestSerializerJSON;
         request.responseSerializerType = kXMResponseSerializerJSON;
+        
         requestBlk(request);
     } onSuccess:^(id responseObject) {
         
         successBlk(responseObject);
     } onFailure:^(NSError *error) {
-        
+        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:[UIApplication sharedApplication].keyWindow];
+        hud.label.text = @"请求失败";
+        [hud hideAnimated:YES afterDelay:1.5];
         failureBlk(error);
     }];
 }
