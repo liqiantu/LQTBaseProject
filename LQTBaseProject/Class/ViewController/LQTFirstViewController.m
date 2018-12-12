@@ -11,6 +11,8 @@
 #import <JXCategoryView.h>
 #import "UIWindow+JXSafeArea.h"
 
+#import "LQTCategoryModel.h"
+
 #define WindowsSize [UIScreen mainScreen].bounds.size
 
 @interface LQTFirstViewController () <JXCategoryViewDelegate>
@@ -27,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    [LQTCategoryModel todayRequest];
 }
 
 

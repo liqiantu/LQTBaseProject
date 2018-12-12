@@ -10,6 +10,7 @@
 
 @implementation LQTCategoryModel
 
+
 + (NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass {
     return @{
              @"content" : [LQTContentModel class]
@@ -20,6 +21,9 @@
     [LQTRequestCenter sendGetRequest:^(XMRequest *request) {
         request.api = @"api/today";
     } onSuccess:^(id responseObject) {
+        NSDictionary *resDic = (NSDictionary *)responseObject;
+        LQTCategoryModel *model = [LQTCategoryModel yy_modelWithDictionary:resDic];
+        
         
     } onFailure:^(NSError *error) {
         

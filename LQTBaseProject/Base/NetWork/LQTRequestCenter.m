@@ -38,7 +38,6 @@
     [XMCenter sendRequest:^(XMRequest *request) {
 //        request.url = @"http://example.com/v1/foo/bar";
         request.httpMethod = kXMHTTPMethodGET;
-        request.requestSerializerType = kXMRequestSerializerJSON;
         request.responseSerializerType = kXMResponseSerializerJSON;
         
         requestBlk(request);

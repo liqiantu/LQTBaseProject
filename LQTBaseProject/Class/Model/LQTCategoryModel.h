@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *category;
 @property (nonatomic, strong) NSArray *content;
 
++ (void)todayRequest;
+
 @end
 
 NS_ASSUME_NONNULL_END

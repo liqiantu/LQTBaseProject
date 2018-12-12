@@ -34,7 +34,7 @@
     [self.window makeKeyAndVisible];
     
 #if DEBUG
-    [[FLEXManager sharedManager] showExplorer];
+//    [[FLEXManager sharedManager] showExplorer];
 #endif
     
     [LQTRequestCenter congfigCenter];
