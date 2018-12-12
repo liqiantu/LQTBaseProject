@@ -11,7 +11,6 @@
 		3020B99621BE01400046F1A9 /* UIWindow+JXSafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B99521BE01400046F1A9 /* UIWindow+JXSafeArea.m */; };
 		3020B99A21BE80340046F1A9 /* LQTRequestCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B99921BE80330046F1A9 /* LQTRequestCenter.m */; };
 		3020B9A021BF492C0046F1A9 /* LQTContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B99F21BF492C0046F1A9 /* LQTContentModel.m */; };
-		3020B9A321BF49670046F1A9 /* LQTCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B9A221BF49670046F1A9 /* LQTCategoryModel.m */; };
 		3038445921B68B1400B6E914 /* LQTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445821B68B1400B6E914 /* LQTFirstViewController.m */; };
 		3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445B21B68B2500B6E914 /* LQTSecondViewController.m */; };
 		306561C921914204006BCBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306561C821914204006BCBC9 /* AppDelegate.m */; };
@@ -42,6 +41,7 @@
 		30971B4921A7A934005044DF /* WTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3721A7A934005044DF /* WTTextView.m */; };
 		309C4E1F21B6582B00108CFB /* LQTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E1E21B6582B00108CFB /* LQTTabBarController.m */; };
 		309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */; };
+		30AF268221C14C510095DB6D /* LQTHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AF268121C14C510095DB6D /* LQTHomeModel.m */; };
 		30F1027E21B778BC003CE4CD /* File in Resources */ = {isa = PBXBuildFile; fileRef = 30F1027D21B778BC003CE4CD /* File */; };
 		30F1028121B778D9003CE4CD /* File in Resources */ = {isa = PBXBuildFile; fileRef = 30F1028021B778D9003CE4CD /* File */; };
 		30F1028421B779E4003CE4CD /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1028321B779E4003CE4CD /* UIViewController+Swizzle.m */; };
@@ -76,8 +76,6 @@
 		3020B99921BE80330046F1A9 /* LQTRequestCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTRequestCenter.m; sourceTree = "<group>"; };
 		3020B99E21BF492C0046F1A9 /* LQTContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTContentModel.h; sourceTree = "<group>"; };
 		3020B99F21BF492C0046F1A9 /* LQTContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTContentModel.m; sourceTree = "<group>"; };
-		3020B9A121BF49670046F1A9 /* LQTCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTCategoryModel.h; sourceTree = "<group>"; };
-		3020B9A221BF49670046F1A9 /* LQTCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTCategoryModel.m; sourceTree = "<group>"; };
 		3038445721B68B1400B6E914 /* LQTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTFirstViewController.h; sourceTree = "<group>"; };
 		3038445821B68B1400B6E914 /* LQTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTFirstViewController.m; sourceTree = "<group>"; };
 		3038445A21B68B2500B6E914 /* LQTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTSecondViewController.h; sourceTree = "<group>"; };
@@ -138,6 +136,8 @@
 		309C4E1E21B6582B00108CFB /* LQTTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTTabBarController.m; sourceTree = "<group>"; };
 		309C4E2C21B67D2800108CFB /* LQTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTBaseViewController.h; sourceTree = "<group>"; };
 		309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTBaseViewController.m; sourceTree = "<group>"; };
+		30AF268021C14C510095DB6D /* LQTHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTHomeModel.h; sourceTree = "<group>"; };
+		30AF268121C14C510095DB6D /* LQTHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTHomeModel.m; sourceTree = "<group>"; };
 		30F1027D21B778BC003CE4CD /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		30F1028021B778D9003CE4CD /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		30F1028221B779E4003CE4CD /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
@@ -235,8 +235,8 @@
 			children = (
 				3020B99E21BF492C0046F1A9 /* LQTContentModel.h */,
 				3020B99F21BF492C0046F1A9 /* LQTContentModel.m */,
-				3020B9A121BF49670046F1A9 /* LQTCategoryModel.h */,
-				3020B9A221BF49670046F1A9 /* LQTCategoryModel.m */,
+				30AF268021C14C510095DB6D /* LQTHomeModel.h */,
+				30AF268121C14C510095DB6D /* LQTHomeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,13 +246,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		3020B9A421BF54C30046F1A9 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		306561BB21914204006BCBC9 = {
@@ -428,7 +421,6 @@
 		30971B4A21A7AA60005044DF /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				3020B9A421BF54C30046F1A9 /* Request */,
 				3020B99D21BF48E90046F1A9 /* View */,
 				3020B99C21BF48E00046F1A9 /* Model */,
 				3020B99B21BF48CB0046F1A9 /* ViewController */,
@@ -685,7 +677,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -696,7 +688,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LQTBaseProject/Pods-LQTBaseProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -719,13 +711,13 @@
 				3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */,
 				306561D72191420C006BCBC9 /* main.m in Sources */,
 				30F1028421B779E4003CE4CD /* UIViewController+Swizzle.m in Sources */,
-				3020B9A321BF49670046F1A9 /* LQTCategoryModel.m in Sources */,
 				30F1028721B7B50F003CE4CD /* LQTBaseNavigationViewController.m in Sources */,
 				30971B3F21A7A934005044DF /* UIBarButtonItem+WT.m in Sources */,
 				3020B99A21BE80340046F1A9 /* LQTRequestCenter.m in Sources */,
 				30971B4721A7A934005044DF /* WTLabel.m in Sources */,
 				306561C921914204006BCBC9 /* AppDelegate.m in Sources */,
 				30971B3A21A7A934005044DF /* NSString+WT.m in Sources */,
+				30AF268221C14C510095DB6D /* LQTHomeModel.m in Sources */,
 				30F1028A21B7E620003CE4CD /* LQTBaseTableViewController.m in Sources */,
 				30971B4421A7A934005044DF /* UIView+WT.m in Sources */,
 				30971B4221A7A934005044DF /* UILabel+WT.m in Sources */,
