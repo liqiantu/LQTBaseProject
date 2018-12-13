@@ -12,7 +12,11 @@
 #import "LQTContentModel.h"
 #import "LQTRequestCenter.h"
 
+@class LQTHomeModel;
+
 NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^todayRequestSuccessBlock)(LQTHomeModel *homeModel);
 
 @interface LQTHomeModel : NSObject <YYModel>
 
@@ -26,9 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSArray <LQTContentModel *> *video;
 @property (nonatomic,strong) NSArray <LQTContentModel *> *fuli;
 
-
-
-+ (void)todayRequest;
++ (void)todayRequestOnSuccess:(todayRequestSuccessBlock)todayRequestBlk;
 
 @end
 

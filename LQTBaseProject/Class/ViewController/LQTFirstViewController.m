@@ -21,6 +21,7 @@
 @property (nonatomic, strong) NSMutableArray <LQTContentTableViewController *> *listVCArray;
 @property (nonatomic, strong) JXCategoryListVCContainerView *listVCContainerView;
 
+@property (nonatomic, strong) LQTHomeModel *homeModel;
 @end
 
 
@@ -28,20 +29,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [LQTHomeModel todayRequest];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+
+    [LQTHomeModel todayRequestOnSuccess:^(LQTHomeModel * _Nonnull homeModel) {
+        self.homeModel = homeModel;
+        [self configUI];
+    }];
 }
-
-
 
 - (void)configUI {
     self.title = @"first";
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     CGFloat naviHeight = [UIApplication.sharedApplication.keyWindow jx_navigationHeight];
     
-    NSArray *titles = [self getRandomTitles];
+    NSArray *titles = self.homeModel.category;
     NSUInteger count = titles.count;
     CGFloat categoryViewHeight = 50;
     CGFloat width = WindowsSize.width;
@@ -50,6 +51,34 @@
     self.listVCArray = [NSMutableArray array];
     for (int i = 0; i < count; i ++) {
         LQTContentTableViewController *listVC = [[LQTContentTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        
+        switch (i) {
+            case 0:
+                listVC.contentModels = self.homeModel.android;
+                break;
+            case 1:
+                listVC.contentModels = self.homeModel.webFront;
+                break;
+            case 2:
+                listVC.contentModels = self.homeModel.app;
+                break;
+            case 3:
+                listVC.contentModels = self.homeModel.extendSource;
+                break;
+            case 4:
+                listVC.contentModels = self.homeModel.ios;
+                break;
+            case 5:
+                listVC.contentModels = self.homeModel.video;
+                break;
+            case 6:
+                listVC.contentModels = self.homeModel.fuli;
+                break;
+                
+            default:
+                break;
+        }
+        
         listVC.view.frame = CGRectMake(i*width, 0, width, height);
         [self.listVCArray addObject:listVC];
     }
@@ -70,8 +99,6 @@
     
     self.categoryView.contentScrollView = self.listVCContainerView.scrollView;
     
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"刷新数据" style:UIBarButtonItemStylePlain target:self action:@selector(reloadData)];
-    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -83,14 +110,9 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    self.navigationController.interactivePopGestureRecognizer.enabled = (self.categoryView.selectedIndex == 0);
+//    self.navigationController.interactivePopGestureRecognizer.enabled = (self.categoryView.selectedIndex == 0);
     
     [self.listVCContainerView parentVCDidAppear:animated];
-}
-
-//这句代码必须加上
-- (BOOL)shouldAutomaticallyForwardAppearanceMethods {
-    return NO;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -99,12 +121,37 @@
     [self.listVCContainerView parentVCWillDisappear:animated];
 }
 
-
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
     [self.listVCContainerView parentVCDidDisappear:animated];
 }
+
+//这句代码必须加上
+- (BOOL)shouldAutomaticallyForwardAppearanceMethods {
+    return NO;
+}
+
+#pragma mark - JXCategoryViewDelegate
+
+- (void)categoryView:(JXCategoryBaseView *)categoryView didSelectedItemAtIndex:(NSInteger)index {
+    //侧滑手势处理
+    self.navigationController.interactivePopGestureRecognizer.enabled = (index == 0);
+}
+
+- (void)categoryView:(JXCategoryBaseView *)categoryView didClickSelectedItemAtIndex:(NSInteger)index {
+    [self.listVCContainerView didClickSelectedItemAtIndex:index];
+}
+
+- (void)categoryView:(JXCategoryBaseView *)categoryView didScrollSelectedItemAtIndex:(NSInteger)index {
+    [self.listVCContainerView didScrollSelectedItemAtIndex:index];
+}
+
+- (void)categoryView:(JXCategoryBaseView *)categoryView scrollingFromLeftIndex:(NSInteger)leftIndex toRightIndex:(NSInteger)rightIndex ratio:(CGFloat)ratio {
+    [self.listVCContainerView scrollingFromLeftIndex:leftIndex toRightIndex:rightIndex ratio:ratio];
+}
+
+#pragma mark - private method
 
 ///**
 // 重载数据源：比如从服务器获取新的数据、否则用户对分类进行了排序等
@@ -138,40 +185,5 @@
 //    self.categoryView.titles = titles;
 //    [self.categoryView reloadData];
 //}
-
-- (NSArray <NSString *> *)getRandomTitles {
-    NSMutableArray *titles = @[@"红烧螃蟹", @"麻辣龙虾", @"美味苹果", @"胡萝卜", @"清甜葡萄", @"美味西瓜", @"美味香蕉", @"香甜菠萝", @"麻辣干锅", @"剁椒鱼头", @"鸳鸯火锅"].mutableCopy;
-    NSInteger randomMaxCount = arc4random()%6 + 5;
-    NSMutableArray *resultArray = [NSMutableArray array];
-    for (int i = 0; i < randomMaxCount; i++) {
-        NSInteger randomIndex = arc4random()%titles.count;
-        [resultArray addObject:titles[randomIndex]];
-        [titles removeObjectAtIndex:randomIndex];
-    }
-    return resultArray;
-}
-
-#pragma mark - JXCategoryViewDelegate
-
-- (void)categoryView:(JXCategoryBaseView *)categoryView didSelectedItemAtIndex:(NSInteger)index {
-    //侧滑手势处理
-    self.navigationController.interactivePopGestureRecognizer.enabled = (index == 0);
-}
-
-- (void)categoryView:(JXCategoryBaseView *)categoryView didClickSelectedItemAtIndex:(NSInteger)index {
-    [self.listVCContainerView didClickSelectedItemAtIndex:index];
-}
-
-- (void)categoryView:(JXCategoryBaseView *)categoryView didScrollSelectedItemAtIndex:(NSInteger)index {
-    [self.listVCContainerView didScrollSelectedItemAtIndex:index];
-}
-
-- (void)categoryView:(JXCategoryBaseView *)categoryView scrollingFromLeftIndex:(NSInteger)leftIndex toRightIndex:(NSInteger)rightIndex ratio:(CGFloat)ratio {
-    [self.listVCContainerView scrollingFromLeftIndex:leftIndex toRightIndex:rightIndex ratio:ratio];
-}
-
-#pragma mark - private method
-
-
 
 @end

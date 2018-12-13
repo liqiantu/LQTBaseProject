@@ -9,6 +9,9 @@
 #import "LQTContentTableViewController.h"
 #import <MJRefresh/MJRefresh.h>
 
+#import "LQTContentTableViewCell.h"
+
+
 @interface LQTContentTableViewController ()
 
 @end
@@ -17,13 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.tableView.mj_header endRefreshing];
-        });
-    }];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LQTContentTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"cell"];
     
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    NSLog(@"LQTContentTableViewController appear");
 }
 
 #pragma mark - Table view data source
@@ -33,12 +40,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 40;
+    return self.contentModels.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
-    cell.textLabel.text = [NSString stringWithFormat:@"index is %ld",(long)indexPath.row];
+    LQTContentModel *model = (LQTContentModel *)self.contentModels[indexPath.row];
+    LQTContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.model = model;
     
     return cell;
 }

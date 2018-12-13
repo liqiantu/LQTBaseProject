@@ -7,10 +7,13 @@
 //
 
 #import "LQTBaseTableViewController.h"
+#import "LQTContentModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LQTContentTableViewController : LQTBaseTableViewController
+
+@property (nonatomic, strong) NSArray<LQTContentModel *> *contentModels;
 
 @end
 

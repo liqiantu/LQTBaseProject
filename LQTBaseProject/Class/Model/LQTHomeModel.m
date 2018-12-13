@@ -8,19 +8,16 @@
 
 #import "LQTHomeModel.h"
 
+
 @implementation LQTHomeModel
 
-+ (void)todayRequest {
++ (void)todayRequestOnSuccess:(todayRequestSuccessBlock)todayRequestBlk {
     [LQTRequestCenter sendGetRequest:^(XMRequest *request) {
         request.api = @"api/today";
     } onSuccess:^(id responseObject) {
         NSDictionary *resDic = (NSDictionary *)responseObject;
-        
         LQTHomeModel *model = [LQTHomeModel yy_modelWithDictionary:resDic];
-        
-        NSLog(@"%@",model);
-        
-        
+        todayRequestBlk(model);
     } onFailure:^(NSError *error) {
         
     }];
@@ -29,19 +26,29 @@
 + (NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass {
     return @{
              @"android": [LQTContentModel class],
-             @"webFront":  [LQTContentModel class]
+             @"webFront":  [LQTContentModel class],
+             @"app":  [LQTContentModel class],
+             @"extendSource":  [LQTContentModel class],
+             @"ios":  [LQTContentModel class],
+             @"video":  [LQTContentModel class],
+             @"fuli":  [LQTContentModel class],
+
              };
 }
 
 + (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
     return @{
              @"android": @"results.Android",
-             @"webFront": @"results.前端"
+             @"webFront": @"results.前端",
+             @"app": @"results.App",
+             @"extendSource": @"results.拓展资源",
+             @"ios": @"results.iOS",
+             @"video": @"results.休息视频",
+             @"fuli": @"results.福利"
              };
 }
 
-- (NSString *)description {
-    return [NSString stringWithFormat:@"%@ %@",self.category[0],self.android[0]];
-}
+- (NSString *)description { return [self yy_modelDescription]; }
+
 
 @end
