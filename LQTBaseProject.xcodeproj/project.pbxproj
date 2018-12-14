@@ -13,6 +13,7 @@
 		3020B9A021BF492C0046F1A9 /* LQTContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B99F21BF492C0046F1A9 /* LQTContentModel.m */; };
 		3020B9BC21C2548D0046F1A9 /* LQTContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B9BA21C2548D0046F1A9 /* LQTContentTableViewCell.m */; };
 		3020B9BD21C2548D0046F1A9 /* LQTContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3020B9BB21C2548D0046F1A9 /* LQTContentTableViewCell.xib */; };
+		3020B9C021C378030046F1A9 /* LQTImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B9BF21C378030046F1A9 /* LQTImageCollectionView.m */; };
 		3038445921B68B1400B6E914 /* LQTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445821B68B1400B6E914 /* LQTFirstViewController.m */; };
 		3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445B21B68B2500B6E914 /* LQTSecondViewController.m */; };
 		306561C921914204006BCBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306561C821914204006BCBC9 /* AppDelegate.m */; };
@@ -81,6 +82,8 @@
 		3020B9B921C2548D0046F1A9 /* LQTContentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTContentTableViewCell.h; sourceTree = "<group>"; };
 		3020B9BA21C2548D0046F1A9 /* LQTContentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTContentTableViewCell.m; sourceTree = "<group>"; };
 		3020B9BB21C2548D0046F1A9 /* LQTContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LQTContentTableViewCell.xib; sourceTree = "<group>"; };
+		3020B9BE21C378030046F1A9 /* LQTImageCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTImageCollectionView.h; sourceTree = "<group>"; };
+		3020B9BF21C378030046F1A9 /* LQTImageCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTImageCollectionView.m; sourceTree = "<group>"; };
 		3038445721B68B1400B6E914 /* LQTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTFirstViewController.h; sourceTree = "<group>"; };
 		3038445821B68B1400B6E914 /* LQTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTFirstViewController.m; sourceTree = "<group>"; };
 		3038445A21B68B2500B6E914 /* LQTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTSecondViewController.h; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				3020B9B921C2548D0046F1A9 /* LQTContentTableViewCell.h */,
 				3020B9BA21C2548D0046F1A9 /* LQTContentTableViewCell.m */,
 				3020B9BB21C2548D0046F1A9 /* LQTContentTableViewCell.xib */,
+				3020B9BE21C378030046F1A9 /* LQTImageCollectionView.h */,
+				3020B9BF21C378030046F1A9 /* LQTImageCollectionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -712,6 +717,7 @@
 				30971B3821A7A934005044DF /* NSArray+WT.m in Sources */,
 				3020B9BC21C2548D0046F1A9 /* LQTContentTableViewCell.m in Sources */,
 				30971B3C21A7A934005044DF /* CALayer+WT.m in Sources */,
+				3020B9C021C378030046F1A9 /* LQTImageCollectionView.m in Sources */,
 				30971B4521A7A934005044DF /* UIViewController+WT.m in Sources */,
 				30971B3921A7A934005044DF /* NSDate+WT.m in Sources */,
 				30F1028F21B7F1AD003CE4CD /* LQTContentTableViewController.m in Sources */,

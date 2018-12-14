@@ -19,6 +19,9 @@ target 'LQTBaseProject' do
   pod 'MBProgressHUD'
   pod 'SDWebImage'
   pod 'SDWebImage/GIF'
+  pod 'Masonry'
+  
+  pod 'UITableView+FDTemplateLayoutCell'
   
   pod 'FLEX', :configurations => ['Debug']
 

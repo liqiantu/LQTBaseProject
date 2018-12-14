@@ -26,7 +26,7 @@
 + (NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass {
     return @{
              @"android": [LQTContentModel class],
-             @"webFront":  [LQTContentModel class],
+             @"recommend":  [LQTContentModel class],
              @"app":  [LQTContentModel class],
              @"extendSource":  [LQTContentModel class],
              @"ios":  [LQTContentModel class],
@@ -39,7 +39,7 @@
 + (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
     return @{
              @"android": @"results.Android",
-             @"webFront": @"results.前端",
+             @"recommend": @"results.瞎推荐",
              @"app": @"results.App",
              @"extendSource": @"results.拓展资源",
              @"ios": @"results.iOS",

@@ -57,7 +57,7 @@
                 listVC.contentModels = self.homeModel.android;
                 break;
             case 1:
-                listVC.contentModels = self.homeModel.webFront;
+                listVC.contentModels = self.homeModel.recommend;
                 break;
             case 2:
                 listVC.contentModels = self.homeModel.app;

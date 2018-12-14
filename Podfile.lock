@@ -19,6 +19,7 @@ PODS:
   - FLAnimatedImage (1.0.12)
   - FLEX (2.4.0)
   - JXCategoryView (1.1.2)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.7)
   - SDWebImage (4.4.3):
@@ -27,6 +28,7 @@ PODS:
   - SDWebImage/GIF (4.4.3):
     - FLAnimatedImage (~> 1.0)
     - SDWebImage/Core
+  - "UITableView+FDTemplateLayoutCell (1.6)"
   - XMNetworking (1.1.0):
     - AFNetworking (~> 3.0)
   - YYModel (1.0.4)
@@ -36,10 +38,12 @@ DEPENDENCIES:
   - FDFullscreenPopGesture
   - FLEX
   - JXCategoryView
+  - Masonry
   - MBProgressHUD
   - MJRefresh
   - SDWebImage
   - SDWebImage/GIF
+  - "UITableView+FDTemplateLayoutCell"
   - XMNetworking
   - YYModel
 
@@ -51,9 +55,11 @@ SPEC REPOS:
     - FLAnimatedImage
     - FLEX
     - JXCategoryView
+    - Masonry
     - MBProgressHUD
     - MJRefresh
     - SDWebImage
+    - "UITableView+FDTemplateLayoutCell"
     - XMNetworking
     - YYModel
 
@@ -64,12 +70,14 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   JXCategoryView: 7281368e4f4e10f1d006ff07114cafd63a495602
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   XMNetworking: 7160cc06f504f325eec515a1e687ee1aa89bc462
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 462920960a36ba63c2b1a7587666d6b92bfd8fcb
+PODFILE CHECKSUM: 9d2d4ecf4a0a5c9a7168d2245ee5c27805a42c9d
 
 COCOAPODS: 1.6.0.beta.2

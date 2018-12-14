@@ -23,7 +23,7 @@ typedef void(^todayRequestSuccessBlock)(LQTHomeModel *homeModel);
 @property (nonatomic,strong) NSArray <NSString *> *category;
 
 @property (nonatomic,strong) NSArray <LQTContentModel *> *android;
-@property (nonatomic,strong) NSArray <LQTContentModel *> *webFront;
+@property (nonatomic,strong) NSArray <LQTContentModel *> *recommend;
 @property (nonatomic,strong) NSArray <LQTContentModel *> *app;
 @property (nonatomic,strong) NSArray <LQTContentModel *> *extendSource;
 @property (nonatomic,strong) NSArray <LQTContentModel *> *ios;
