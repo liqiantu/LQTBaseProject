@@ -12,6 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LQTBaseViewController : UIViewController
 
+@property(nonatomic,strong)UITableView *tableView;
+
+@property(nonatomic,strong)NSMutableArray *dataSource;
+
+-(void)registerCellWithNib:(NSString *)nibName tableView:(UITableView *)tableView;
+
+-(void)registerCellWithClass:(NSString *)className tableView:(UITableView *)tableView;
+
 @end
 
 NS_ASSUME_NONNULL_END
