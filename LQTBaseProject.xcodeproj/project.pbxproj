@@ -42,6 +42,8 @@
 		30971B4721A7A934005044DF /* WTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3321A7A934005044DF /* WTLabel.m */; };
 		30971B4821A7A934005044DF /* WTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3521A7A934005044DF /* WTTextField.m */; };
 		30971B4921A7A934005044DF /* WTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3721A7A934005044DF /* WTTextView.m */; };
+		309AA41221CC925200E78D43 /* LQTSelfLoadModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 309AA41121CC925200E78D43 /* LQTSelfLoadModule.m */; };
+		309AA41521CC95EC00E78D43 /* LQTMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309AA41421CC95EC00E78D43 /* LQTMainTableViewController.m */; };
 		309C4E1F21B6582B00108CFB /* LQTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E1E21B6582B00108CFB /* LQTTabBarController.m */; };
 		309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */; };
 		30AF268221C14C510095DB6D /* LQTHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AF268121C14C510095DB6D /* LQTHomeModel.m */; };
@@ -140,6 +142,10 @@
 		30971B3521A7A934005044DF /* WTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTextField.m; sourceTree = "<group>"; };
 		30971B3621A7A934005044DF /* WTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTextView.h; sourceTree = "<group>"; };
 		30971B3721A7A934005044DF /* WTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTextView.m; sourceTree = "<group>"; };
+		309AA41021CC925200E78D43 /* LQTSelfLoadModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTSelfLoadModule.h; sourceTree = "<group>"; };
+		309AA41121CC925200E78D43 /* LQTSelfLoadModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTSelfLoadModule.m; sourceTree = "<group>"; };
+		309AA41321CC95EC00E78D43 /* LQTMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTMainTableViewController.h; sourceTree = "<group>"; };
+		309AA41421CC95EC00E78D43 /* LQTMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTMainTableViewController.m; sourceTree = "<group>"; };
 		309C4E1D21B6582B00108CFB /* LQTTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTTabBarController.h; sourceTree = "<group>"; };
 		309C4E1E21B6582B00108CFB /* LQTTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTTabBarController.m; sourceTree = "<group>"; };
 		309C4E2C21B67D2800108CFB /* LQTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTBaseViewController.h; sourceTree = "<group>"; };
@@ -286,6 +292,7 @@
 		306561C621914204006BCBC9 /* LQTBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				309AA40F21CC922400E78D43 /* Module */,
 				30971B4A21A7AA60005044DF /* Class */,
 				30971B0921A79BB7005044DF /* Vender */,
 				306561FA2191625D006BCBC9 /* Category */,
@@ -441,6 +448,15 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
+		309AA40F21CC922400E78D43 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				309AA41021CC925200E78D43 /* LQTSelfLoadModule.h */,
+				309AA41121CC925200E78D43 /* LQTSelfLoadModule.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		309C4E1C21B656F100108CFB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +493,8 @@
 		30F1028C21B7F16A003CE4CD /* ContentVC */ = {
 			isa = PBXGroup;
 			children = (
+				309AA41321CC95EC00E78D43 /* LQTMainTableViewController.h */,
+				309AA41421CC95EC00E78D43 /* LQTMainTableViewController.m */,
 				30F1028D21B7F1AD003CE4CD /* LQTContentTableViewController.h */,
 				30F1028E21B7F1AD003CE4CD /* LQTContentTableViewController.m */,
 			);
@@ -733,7 +751,9 @@
 				30971B4721A7A934005044DF /* WTLabel.m in Sources */,
 				306561C921914204006BCBC9 /* AppDelegate.m in Sources */,
 				30971B3A21A7A934005044DF /* NSString+WT.m in Sources */,
+				309AA41221CC925200E78D43 /* LQTSelfLoadModule.m in Sources */,
 				30AF268221C14C510095DB6D /* LQTHomeModel.m in Sources */,
+				309AA41521CC95EC00E78D43 /* LQTMainTableViewController.m in Sources */,
 				30F1028A21B7E620003CE4CD /* LQTBaseTableViewController.m in Sources */,
 				30971B4421A7A934005044DF /* UIView+WT.m in Sources */,
 				30971B4221A7A934005044DF /* UILabel+WT.m in Sources */,

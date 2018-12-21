@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LQTTabBarController.h"
+#import "LQTMainTableViewController.h"
 #import "LQTRequestCenter.h"
 
 #if DEBUG
@@ -24,20 +24,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    [LQTRequestCenter congfigCenter];
+    
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.backgroundColor = [UIColor whiteColor];
     
-    LQTTabBarController *tabVC = [LQTTabBarController new];
-    
-    [self.window setRootViewController:tabVC];
+//    LQTTabBarController *tabVC = [LQTTabBarController new];
+    LQTMainTableViewController *mainTableVC = [[LQTMainTableViewController alloc] init];
+    [self.window setRootViewController:mainTableVC];
     [self.window makeKeyAndVisible];
     
 #if DEBUG
 //    [[FLEXManager sharedManager] showExplorer];
 #endif
-    
-    [LQTRequestCenter congfigCenter];
     
     return YES;
 }
