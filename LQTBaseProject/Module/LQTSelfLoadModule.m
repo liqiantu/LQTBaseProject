@@ -18,6 +18,9 @@
 //值得注意的是，通知是在- application:didFinishLaunchingWithOptions:调用完成后才发送的。
 //顺便提下给 AppDelegate 瘦身的建议：AppDelegate 作为程序级状态变化的 delegate，应该只做路由和分发的作用，具体逻辑实现代码还是应该在分别的模块中，这个文件应该保持整洁，除了<UIApplicationDelegate>的方法外不应该出现其他方法。
 
+//AOP编程以及Aspect库
+//Aspect库是对面向切面编程(Aspect Oriented Programming)的实现，里面封装了Runtime的方法，也封装了上文的Method Swizzling方法。因此我们也可以看到，Method Swizzling也是AOP编程的一种。Aspect的用途很广泛，这里不具体展开，想了解更多的可以看一下官方github的介绍，已经够详细了。
+
 @implementation LQTSelfLoadModule
 
 + (void)load

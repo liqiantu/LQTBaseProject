@@ -16,6 +16,7 @@
 		3020B9C021C378030046F1A9 /* LQTImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3020B9BF21C378030046F1A9 /* LQTImageCollectionView.m */; };
 		3038445921B68B1400B6E914 /* LQTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445821B68B1400B6E914 /* LQTFirstViewController.m */; };
 		3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038445B21B68B2500B6E914 /* LQTSecondViewController.m */; };
+		305A8B5221D604E900924537 /* MyCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 305A8B5121D604E900924537 /* MyCustomView.m */; };
 		306561C921914204006BCBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306561C821914204006BCBC9 /* AppDelegate.m */; };
 		306561CC21914204006BCBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306561CB21914204006BCBC9 /* ViewController.m */; };
 		306561CF21914204006BCBC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306561CD21914204006BCBC9 /* Main.storyboard */; };
@@ -44,6 +45,9 @@
 		30971B4921A7A934005044DF /* WTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30971B3721A7A934005044DF /* WTTextView.m */; };
 		309AA41221CC925200E78D43 /* LQTSelfLoadModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 309AA41121CC925200E78D43 /* LQTSelfLoadModule.m */; };
 		309AA41521CC95EC00E78D43 /* LQTMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309AA41421CC95EC00E78D43 /* LQTMainTableViewController.m */; };
+		309AA41D21D21BDE00E78D43 /* JGGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309AA41C21D21BDE00E78D43 /* JGGView.m */; };
+		309AA42021D21BF300E78D43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309AA41F21D21BF300E78D43 /* ViewController.m */; };
+		309AA42321D21C0900E78D43 /* JGGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309AA42221D21C0800E78D43 /* JGGViewController.m */; };
 		309C4E1F21B6582B00108CFB /* LQTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E1E21B6582B00108CFB /* LQTTabBarController.m */; };
 		309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309C4E2D21B67D2800108CFB /* LQTBaseViewController.m */; };
 		30AF268221C14C510095DB6D /* LQTHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AF268121C14C510095DB6D /* LQTHomeModel.m */; };
@@ -90,6 +94,8 @@
 		3038445821B68B1400B6E914 /* LQTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTFirstViewController.m; sourceTree = "<group>"; };
 		3038445A21B68B2500B6E914 /* LQTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTSecondViewController.h; sourceTree = "<group>"; };
 		3038445B21B68B2500B6E914 /* LQTSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTSecondViewController.m; sourceTree = "<group>"; };
+		305A8B5021D604E900924537 /* MyCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomView.h; sourceTree = "<group>"; };
+		305A8B5121D604E900924537 /* MyCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomView.m; sourceTree = "<group>"; };
 		306561C421914204006BCBC9 /* LQTBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQTBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306561C721914204006BCBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		306561C821914204006BCBC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,6 +152,12 @@
 		309AA41121CC925200E78D43 /* LQTSelfLoadModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTSelfLoadModule.m; sourceTree = "<group>"; };
 		309AA41321CC95EC00E78D43 /* LQTMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTMainTableViewController.h; sourceTree = "<group>"; };
 		309AA41421CC95EC00E78D43 /* LQTMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTMainTableViewController.m; sourceTree = "<group>"; };
+		309AA41B21D21BDE00E78D43 /* JGGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGView.h; sourceTree = "<group>"; };
+		309AA41C21D21BDE00E78D43 /* JGGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGView.m; sourceTree = "<group>"; };
+		309AA41E21D21BF200E78D43 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		309AA41F21D21BF300E78D43 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		309AA42121D21C0800E78D43 /* JGGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGViewController.h; sourceTree = "<group>"; };
+		309AA42221D21C0800E78D43 /* JGGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGViewController.m; sourceTree = "<group>"; };
 		309C4E1D21B6582B00108CFB /* LQTTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTTabBarController.h; sourceTree = "<group>"; };
 		309C4E1E21B6582B00108CFB /* LQTTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQTTabBarController.m; sourceTree = "<group>"; };
 		309C4E2C21B67D2800108CFB /* LQTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQTBaseViewController.h; sourceTree = "<group>"; };
@@ -235,8 +247,11 @@
 		3020B99B21BF48CB0046F1A9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				309AA41A21D21B9A00E78D43 /* JGG */,
 				3038445721B68B1400B6E914 /* LQTFirstViewController.h */,
 				3038445821B68B1400B6E914 /* LQTFirstViewController.m */,
+				309AA41E21D21BF200E78D43 /* ViewController.h */,
+				309AA41F21D21BF300E78D43 /* ViewController.m */,
 				3038445A21B68B2500B6E914 /* LQTSecondViewController.h */,
 				3038445B21B68B2500B6E914 /* LQTSecondViewController.m */,
 				30F1028C21B7F16A003CE4CD /* ContentVC */,
@@ -258,6 +273,7 @@
 		3020B99D21BF48E90046F1A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				305A8B4F21D604B000924537 /* IB_DESIGNABLE与IBInspectable的使用 */,
 				3020B9B921C2548D0046F1A9 /* LQTContentTableViewCell.h */,
 				3020B9BA21C2548D0046F1A9 /* LQTContentTableViewCell.m */,
 				3020B9BB21C2548D0046F1A9 /* LQTContentTableViewCell.xib */,
@@ -265,6 +281,15 @@
 				3020B9BF21C378030046F1A9 /* LQTImageCollectionView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		305A8B4F21D604B000924537 /* IB_DESIGNABLE与IBInspectable的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				305A8B5021D604E900924537 /* MyCustomView.h */,
+				305A8B5121D604E900924537 /* MyCustomView.m */,
+			);
+			path = "IB_DESIGNABLE与IBInspectable的使用";
 			sourceTree = "<group>";
 		};
 		306561BB21914204006BCBC9 = {
@@ -455,6 +480,17 @@
 				309AA41121CC925200E78D43 /* LQTSelfLoadModule.m */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		309AA41A21D21B9A00E78D43 /* JGG */ = {
+			isa = PBXGroup;
+			children = (
+				309AA42121D21C0800E78D43 /* JGGViewController.h */,
+				309AA42221D21C0800E78D43 /* JGGViewController.m */,
+				309AA41B21D21BDE00E78D43 /* JGGView.h */,
+				309AA41C21D21BDE00E78D43 /* JGGView.m */,
+			);
+			path = JGG;
 			sourceTree = "<group>";
 		};
 		309C4E1C21B656F100108CFB /* ViewController */ = {
@@ -738,15 +774,18 @@
 				3020B9C021C378030046F1A9 /* LQTImageCollectionView.m in Sources */,
 				30971B4521A7A934005044DF /* UIViewController+WT.m in Sources */,
 				30971B3921A7A934005044DF /* NSDate+WT.m in Sources */,
+				309AA42321D21C0900E78D43 /* JGGViewController.m in Sources */,
 				30F1028F21B7F1AD003CE4CD /* LQTContentTableViewController.m in Sources */,
 				306561CC21914204006BCBC9 /* ViewController.m in Sources */,
 				30971B4021A7A934005044DF /* UIButton+WT.m in Sources */,
+				309AA41D21D21BDE00E78D43 /* JGGView.m in Sources */,
 				309C4E2E21B67D2800108CFB /* LQTBaseViewController.m in Sources */,
 				3038445C21B68B2500B6E914 /* LQTSecondViewController.m in Sources */,
 				306561D72191420C006BCBC9 /* main.m in Sources */,
 				30F1028421B779E4003CE4CD /* UIViewController+Swizzle.m in Sources */,
 				30F1028721B7B50F003CE4CD /* LQTBaseNavigationViewController.m in Sources */,
 				30971B3F21A7A934005044DF /* UIBarButtonItem+WT.m in Sources */,
+				309AA42021D21BF300E78D43 /* ViewController.m in Sources */,
 				3020B99A21BE80340046F1A9 /* LQTRequestCenter.m in Sources */,
 				30971B4721A7A934005044DF /* WTLabel.m in Sources */,
 				306561C921914204006BCBC9 /* AppDelegate.m in Sources */,
@@ -754,6 +793,7 @@
 				309AA41221CC925200E78D43 /* LQTSelfLoadModule.m in Sources */,
 				30AF268221C14C510095DB6D /* LQTHomeModel.m in Sources */,
 				309AA41521CC95EC00E78D43 /* LQTMainTableViewController.m in Sources */,
+				305A8B5221D604E900924537 /* MyCustomView.m in Sources */,
 				30F1028A21B7E620003CE4CD /* LQTBaseTableViewController.m in Sources */,
 				30971B4421A7A934005044DF /* UIView+WT.m in Sources */,
 				30971B4221A7A934005044DF /* UILabel+WT.m in Sources */,
